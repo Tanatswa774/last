@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 // ✅ CHANGE THIS to your real IP or domain
-const API_BASE = "http://65.109.30.46:5000";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 function App() {
   const [email, setEmail] = useState('');
