@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-// ✅ CHANGE THIS to your real IP or domain
-const API_BASE = process.env.REACT_APP_API_URL;
+const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000"; // fallback for dev
 
 function App() {
   const [email, setEmail] = useState('');
