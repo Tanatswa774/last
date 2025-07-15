@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000"; // fallback for dev
+const API_BASE = process.env.REACT_APP_API_URL || "http://65.109.30.46:5000"; // fallback for dev
 
 function App() {
   const [email, setEmail] = useState('');
